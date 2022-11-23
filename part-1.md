@@ -88,23 +88,22 @@ In all but some esoteric cases, the first harmonic (the fundamental, called _f_)
  
 
 The third harmonic has a frequency of 3_f_ (which is the perfect fifth, one and a half octaves above the fundamental) and the fourth harmonic, with a frequency of 4_f_, defines the second octave above the fundamental. The next three harmonics then lie within the next octave, and the eighth harmonic defines the third octave above the fundamental. And so it goes on...
- 
+ // Ici expliquer un peu plus la logique
 
 This is the information we need to understand Pythagoras's observation. The shorter of the two strings in the 1:2 relationship is producing a fundamental at the same frequency as the second harmonic of the longer one. It's exactly one octave higher. In the example of the 2:3 strings, the third harmonic of the longer string is at the same frequency as the second harmonic of the shorter one. In other words, the harmonic structures of the two strings are closely related to one another, and we hear this as musically 'pleasing'.
- 
- 
+ // Ici un example un peu interactif pourrait être utile
 
 **The Nature Of A Sound**
  
  
 
 Now consider this: when you pluck a string, you don't hear the sound of a single harmonic. The conditions for creating such a pure tone are -- in the real world -- almost impossibly precise, so any naturally occurring tone is likely to be a composite of many harmonics present in differing amounts. At any given moment it is this combination that determines the waveform of the sound and, because of the number of harmonics present, this waveform will be much more convoluted than the simple sine wave shown in Figure 3\. You only have to look at a sample of a guitar or a human voice in a waveform editor to see how complex a real waveform can be.
- 
+ // ici donner des examples
 
 This would make analysis of sound -- or its resynthesis -- almost impossibly difficult, had it not been for a French mathematician named Jean Baptiste Joseph Fourier. Another guy with a colourful life, Fourier was in turns a teacher, a secret policeman, a political prisoner, governor of Egypt, Prefect of Isère and Rhône, and a friend of Napoleon. Despite this, he still found time to determine that any periodic motion, no matter how complex, could be broken down into its harmonic components. This procedure is called Fourier Analysis in his honour. Furthermore, Fourier analysis also shows that, given a set of harmonics, you can derive a unique waveform.
- 
+ // ici donner des pistes vers cet incroyable rabbit hole
 
-Hold on a second... the waveform defines the harmonics, and the harmonics determine the waveform? Clearly, harmonics and the waveforms are just two ways of expressing the same thing. This is a key point: the natures of musical tones are defined by the numbers and amplitudes of the harmonics contained within them, and any given set of harmonics gives us a given waveform. So when we look at the oscillators on a synth and see things such as 'square' waves or 'sawtooth' waves, this is simply a shorthand way of saying, "this setting generates a particular set of harmonics with amplitudes of x, y and z..."
+Hold on a second... the waveform defines the harmonics, and the harmonics determine the waveform? Clearly, **harmonics and the waveforms are just two ways of expressing the same thing**. This is a key point: the natures of musical tones are defined by the numbers and amplitudes of the harmonics contained within them, and any given set of harmonics gives us a given waveform. **So when we look at the oscillators on a synth and see things such as 'square' waves or 'sawtooth' waves, this is simply a shorthand way of saying, "this setting generates a particular set of harmonics with amplitudes of x, y and z..."**
  
  
 
@@ -122,7 +121,7 @@ _Every harmonic is present, and the amplitude of the nth harmonic is 1/n times t
  
 
 OK, so it doesn't look so simple when written in English but, believe me, there are far nastier ones than this. Anyway, Figure 7 shows the first 10 harmonics in a sawtooth wave, and you can see how they taper off at higher and higher frequencies.
- 
+// Ici donner des ressources pour bien s'approprier cette phrase
 
 But what happens if you truncate this series of harmonics? Let's say you remove all but the first five of them (for which you need a device called a 'filter'). Figure 8 shows this spectrum, and Figure 9 shows the waveform to which it corresponds.
  
