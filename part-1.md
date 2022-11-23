@@ -62,10 +62,12 @@ Now imagine that we gently pluck the string exactly halfway between the ends. As
  
 
 This is an example of a 'standing wave'. It does not run up and down the string like waves on the surface of the sea, but vibrates up and down. If the vibration (or 'oscillation') is as simple as that shown in Figure 2, a point at the centre of the string moves in a simple, repeating pattern called a sine wave (see Figure 3). We call this pattern the oscillation's 'waveform', and the frequency with which the waveform completes one 'cycle' is called the 'fundamental' frequency of the string.
- 
+ // ici je pense qu'il faudrait donner un peu plus d'exemples pour que le lecteur puisse s'approprier ce que veut dire une onde.
+ // Est-ce qu'il est pertinent de lier ça à la pression ressentie par le tympan ?
+ // Pareil pour la notion de cycle. Il existe de très bonnes explication de ça sur youtube qui peuvent compléter cette partie
 
 The fundamental mode is, however, not the only way in which the string can vibrate -- although because it is fixed at both ends, the number of ways and the speeds with which it can do so are severely constrained. Imagine placing your finger in the exact centre of the string (but so that the string can still vibrate along its entire length) and plucking it on one side or the other. You can see from Figure 4 that a standing wave with half the wavelength of the original looks perfectly feasible.
- 
+ // plus de précisions
 
 Likewise, if you place your finger one-third of the way along the string, a standing wave of one-third the wavelength of the original should be possible (Figure 5) and so on.
  
@@ -74,9 +76,12 @@ Indeed, these standing waves can exist at all the integer divisions of the wave 
  
 
 [![](http://media.soundonsound.com/sos/may99/images/synthfigs2.s.gif)][3]If you study the maths of standing waves, you'll discover that you can represent such a wave as two 'running' waves moving in opposite directions along the string (no, don't ask why, or we'll be here until page 304). Knowing this, however, leads us to a simple conclusion: if you halve the wavelength, the frequency of the 'running' waves required will double. Similarly, if you divide the wavelength by a factor of three, you triple the frequency; quarter the wavelength and you multiply the frequency by four, and so on... Only whole numbers will work because, if you tried to introduce a non-integer change in the frequency, the string would need to be somewhere other than at the zero position at one of its ends (ie. part of the way through an complete cycle), and this isn't possible because, of course, the ends are fixed.
- 
+ // Ici donner des liens vers le rabbit hole de pourquoi " you can represent such a wave as two 'running' waves moving in opposite 
+ // directions along the string"
+ // Aussi, il dit que c'est ok de diviser la longueur d'onde par un entier, et que la fréquence se retrouve multipliée par cet entier
+ // Donc par ex, multiplier la longueur d'onde par 1/3 c'est ok, mais est-ce que c'est aussi le cas si on multiplie par 2/3 ?
 
-Anyway, we've now answered our first question by identifying the harmonics which can be produced by a simple oscillator: they are the permissible modes of vibration. Of course, this analysis doesn't only apply to a vibrating string. Consider the air in an enclosed space such as a cubic room. Forgetting for a moment any complicating factors such as furniture, the air can vibrate anywhere in the room except at the walls, floor, and ceilings. In other words, the vibrations in the room are constrained in the same way as those on a string. This is why regular rooms have 'resonances' -- they are the harmonic frequencies of the room itself. And this is why cathedral organs work -- pipes are also simple harmonic oscillators.
+Anyway, we've now answered our first question by identifying the harmonics which can be produced by a simple oscillator: they are the permissible modes of vibration. Of course, this analysis doesn't only apply to a vibrating string. Consider the air in an enclosed space such as a cubic room. Forgetting for a moment any complicating factors such as furniture, the air can vibrate anywhere in the room except at the walls, floor, and ceilings. In other words, the vibrations in the room are constrained in the same way as those on a string. This is why regular rooms have 'resonances' -- they are the harmonic frequencies of the room itself (je trouve que cette phrase est source de confusion). And this is why cathedral organs work -- pipes are also simple harmonic oscillators.
  
 
 In all but some esoteric cases, the first harmonic (the fundamental, called _f_) is the pitch that you'll perceive when you listen to the sound of the plucked string. The second harmonic (also called the first 'overtone') is half the wavelength of the fundamental and therefore twice the frequency. In isolation we would perceive this as a tone exactly one octave above the fundamental.
