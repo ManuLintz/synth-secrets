@@ -34,6 +34,7 @@ Let's consider a stationary, circular drum head. Like the string described last 
 Now imagine that you hit the drum skin exactly in its centre. You might expect it to move up and down in a single motion, just like the fundamental of the vibrating string. And you would be right again. Viewed from its side, the fundamental frequency of a vibrating circular membrane looks suspiciously like that of a vibrating string (see Figure 2). This, for reasons we need not go into, is called the _w01_ mode of the membrane.[![](http://media.soundonsound.com/sos/jun99/images/picture_7small.gif)][4]
 
 (At this point you can breathe a sigh of relief because, unlike last month, I am not going to make you worry about any maths. This is not out of respect for you, but because the equations relating to a vibrating membrane are capable of giving astrophysicists serious headaches.)
+// It would be interesting to dig into this 
 
 Since you are hitting the drum skin in its centre, you can't put your finger in the middle as you did to create the second harmonic of the string, so let's look at the equivalent of the third harmonic. If you remember last month's article, you'll recall that you put your finger one-third of the way along the string to create an overtone of exactly three times the frequency of the fundamental. But if you try this with the drum skin, placing your finger one-third of the way from the centre to the rim, you're in the wrong place. Instead of having 'zero points' described by a simple 1/(integer) relationship, the drum's zero points are described by a hideous equation called a Bessel Function. This tells us that the first zero point is 42.6 percent of the distance from the centre to the rim. What's more, the frequency of a drum skin vibrating in this way (called the w02 mode) is 2.296 times the fundamental. So, while the 'odd' overtones of the string and the membrane can look similar, their musical properties are very different (see Figure 3).
 
@@ -49,9 +50,13 @@ Just like a vibrating string, the drumhead is almost always excited in such a wa
 
 To explain this a little more clearly, let's look at the position of the first four harmonics of the sawtooth waveform, and compare them to the first few harmonics of the drumhead (see Figure 6 on page 66). As you can see, the drum skin generates more harmonics, and they are clustered in an uneven[![](http://media.soundonsound.com/sos/jun99/images/picture8small.gif)][5] manner, unlike the regularly spaced overtones produced by the simple harmonic oscillator. This makes the sound 'atonal', and stops us from perceiving a simple pitch and tone. Indeed, if you look beyond these first few harmonics, you'll find that the drum skin's overtones become more and more numerous and more closely spaced. If we drew the same diagram as 6(b) for a drum skin with a fundamental of, say, 100Hz, but extended the frequency axis to 20kHz, it would look like an inseparable bunch of harmonic frequencies extending right up to (and beyond) the limits of hearing.
 
+// I think this drum example is pretty confusing to get started with synthesis
+
 If all this is beginning to make you boggle, you won't want to consider the further complications that exist in the real world. For example, no matter how carefully you adjust it, a drum skin will always have slight variations in tension across its surface, so the modes will be distorted and, in all likelihood, impossible to calculate. And every drummer knows that, when you hit a drum harder, its pitch rises. This means that the fundamental frequency is in some way related to the displacement of the membrane. Aargh!
 
 My advice is this: don't even think about trying to analyse the sound produced by something that, at first sight, seems as simple as a drum skin. Research groups have spent decades creating hugely sophisticated mathematical models of vibrating membranes and, as you know, the few DSP-based products that use these are still distinguishable from the 'real' thing. So is it time to admit defeat and consign our analogue synthesizers to the ignominy of 1970s-style trumpet and 'cello imitations? Strangely, no...
+
+// Actually I want to analyse this kind of sound haha
 
 **Synthesizing The Un-synthesizable**
 
