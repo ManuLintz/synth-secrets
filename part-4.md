@@ -30,38 +30,47 @@ Working backwards, this approach allows us to employ the same units used to desc
 This is a very neat way of expressing this physical attribute of the waveform, and makes it easy to describe relative phase. For example, if two sine waves are offset by half a cycle with respect to each other, you can say that (because one is at 180º when the other is at 0º) these waves are '180º out of phase'. 
 
 This is because two signals that are offset by a complete cycle (360º out of phase) are once again perfectly in phase with each other!
-
+// This part is probably more confusing than it needs to be
 Right, let's take a deep breath, and apply these ideas to a more complex waveform -- say a sawtooth. As you may remember from the first part of this series, a sawtooth wave has every harmonic present, so, if the fundamental (the first harmonic) lies at 100Hz, the second harmonic will be at 200Hz, the third at 300Hz... and so on. Adding two of these sawtooths (sawteeth?) with the fundamentals offset half a cycle means, of course, that the fundamentals are cancelled out. But the second harmonics, lying at 200Hz, will be added! The third harmonic, at three times the frequency of the fundamental, will be cancelled out, the fourth harmonic will be reinforced, the fifth cancelled... and so on. The result is a waveform with harmonics at 200Hz, 400Hz, 600Hz and so on... in fact, it's a sawtooth of the same amplitude but exactly twice the frequency of the originals.
+// same here, the sawtooth part need some image, like that it sounds super complicated for no reason
+// + I don't really like how vague the reminder on the sawtooth harmonics is. This is some super important stuff. It needs repetition.
 
 This is a stunning result, quite at odds with much perceived wisdom. So this month's first Synth Secret is:
 
 _Combining complex 'out of phase' signals does not necessarily lead to complete cancellation. In fact, in the real world, it rarely, _if ever_, does so._
+// This "secret" is very well put !
 
 Yet even this result is one of the simplest cases of phase-shifting you can consider. Imagine how much more complex the result becomes when you apply these ideas to a complex waveform: some harmonics will be a bit quieter, some will be a bit louder, a few will be completely cancelled, and a few will be perfectly a[![](http://media.soundonsound.com/sos/aug99/images/fig567s.gif)][4]dded. But this is, of course, what happens in the real world. Fourier analysis (back to part one again, for anyone who can't remember) tells us that any two complex signals -- such as those representing speech or music -- can be described as an infinite number of sine waves that represent all the frequencies present in the signal. So, for any given offset between two otherwise identical signals, each frequency will be phase-shifted by a different amount. The result, when viewed on a spectral analyser, looks like a broad comb, with the distance between the 'teeth' of the comb (the cancellations) defined by the timing difference (see Figure 5, on page 118).
-
+// Last phrase is not clear
 In other words, when you mix two offset but otherwise identical signals, the phases of the individual frequencies define a filter. This, because of its characteristic shape, is called a Comb Filter, and you'll find examples of this on instruments as diverse as the Analogue Systems RS Integrator (a traditional modular analogue synth) and the DSP-based Waldorf Q.
+// This intro is weird, Comb Filter mention us confusing
 
 **Phasing & Filtering**
 
 OK, so now you know something about phase, and you can see that this can be closely associated with audio filtering. But ask yourself this: If phase changes lead to filtering, can you assume that filtering leads to phase changes? The answer is, of course, yes.
 
 Look at the electrical circuit in Figure 6 (on page 116). This has just two components -- a resistor and a capacitor -- but it depicts a perfectly usable filter called an RC low-pass filter. And, as any novice synthesist knows, a low-pass filter passes unhindered all the frequencies below a 'cutoff' frequency while attenuating all those above it. For this simple filter, the cutoff frequency is defined by the component values, while the nature of the circuit itself defines the rate at which the higher frequencies are attenuated.
-
+// Confusing
 Surprisingly (you may think) we're not going to worry about the rate of attenuation this month -- we'll cover that next month. Instead, we're going to look at what this filter does to the phases of the signals fed into it...
-
+// Uninviting phrase
 Look at Figure 7 (on page 116). This describes a property called the 'phase response' of our simple LPF, and it shows us that the phase of any given frequency presented at the filter's input will be shifted backwards to a greater or lesser extent. As you can see, low-frequency signal components are largely unaffected by the filter, a component at the cutoff frequency is shifted by exactly an eighth of a cycle ( or -45º), and high-frequency components are shifted by a full -90º.
+// Mention of degrees is confusing
 
 Since these concepts are a bit esoteric (and because I want you to read to the end of this article without getting a headache) let's illustrate this by seeing what our RC filter does to something as fundamental to an analogue synth as a 100Hz square wave.
+// It's wrong to just mention something and not give a way to understand it. A bit pedantic.
 
 If you recall the first part of Synth Secrets, you'll remember that you can represent any conventional waveform by a number of harmonics, called the[![](http://media.soundonsound.com/sos/aug99/images/fig8910s.gif)][5] fundamental and its overtones. In this case, our input signal (the square wave) has a fundamental of 100Hz. The second harmonic -- at 200Hz -- is absent, but the third harmonic lies at 300Hz and has an amplitude of a third of the fundamental. Similarly, the fourth harmonic is absent, but the fifth is present at 500Hz and has an amplitude of one-fifth... and so on. All the harmonics are in phase, and the waveform looks like that shown in Figure 8, left.
+// Image is confusing
 
 Now let's say that our simple RC filter has a cutoff frequency of 400Hz, and imagine what would happen to our square wave if the filter's phase response was zero at all frequencies. This is quite simple: the fundamental and first overtone of the square wave (the harmonics at 100Hz and 300Hz) would be unattenuated, but all the overtones at 500Hz and above would be attenuated according to the filter's response. The resulting waveform (and you'll have to trust me on this) is shown in Figure 9, left.
+// Confusing
 
 But now let's take into account the phase shifts imposed upon each of the harmonics in the signal. We now get a waveform that looks very different, and the true output from our filter (Figure 10) is visibly distorted when compared to the original.
 
 This leads to a hugely important conclusion, and this month's most important Synth Secret:
 
 _Filters not only change a waveform by attenuation, but distort it by individually phase-shifting the harmonics within it._
+// This secret isn't super clear.
 
 Strangely, due to the relative simplicity of the filtered square wave, you probably won't be able to hear the difference between the waveforms in Figures 9 and 10 -- you would need a more complex wave to hear the phase-shifting of the harmonics. But as you've already seen in this series, there are very few sounds in the real world that _aren't_ more complex than a square wave, and so the effect on most sounds can be quite dramatic. And, of course, if it's a _Moog_ filter you're passing the sound through... ah, but that's a discussion for another day.[![](http://media.soundonsound.com/images/regulars/sos_end.gif)][6]
 
