@@ -8,16 +8,22 @@ Last month, we started looking at audio filters, demonstrating (if not proving) 
 **Passive Filters**
 
 [![](http://media.soundonsound.com/sos/sep99/images/synthfig1s.gif)][2]Figure 1 shows the passive low-pass RC filter first introduced last month (incidentally, you can, with a fair degree of accuracy, define a passive component as one that draws no power except that presented as the signal at its input -- so resistors, capacitors and inductors are examples of passive components, while transistors and other amplifiers are not). If you read last month's instalment, you may remember that we can define the cutoff frequency of an RC filter simply by choosing appropriate values for the two passive components within it. So far, so good... that tells us where in the audible spectrum the filter will take effect, but is doesn't tell us what the extent of its effect will be.
+// Confusing
 
 The relationship between what you put into a filter and what you get out is called the Transfer Function, and strictly speaking, this should encompass both the amplitude response (ie. effect on volume) and the phase response of the filter. [![](http://media.soundonsound.com/sos/sep99/images/synthfig2s.gif)][3]But, since we discussed the phase-shifting aspect last month, we're only going to consider the amplitude response this month. As it happens, the idealised transfer function of our RC filter is very simple: for every doubling of the frequency above the cutoff frequency (which I will call Fc), the gain at the output is halved (see Figure 2, ).
+// Confusing
 
 So, for example, if Fc is 1kHz, the gain at 2kHz is 1/2 (ie. the output is halved), the gain at 4kHz is 1/4 (the output is a quarter)... and so on. Since each doubling of the frequency is equivalent to moving up an octave, and each successive halving of the gain is known as an attenuation of six decibels (6dB), this response is most commonly called a 6dB/octave filter.
+// Confusing
 
 Unfortunately (and despite its ubiquitous use within the music industry) Figure 2 is actually _wrong_. Figure 3 shows a more accurate representation of the transfer function. As you can see, the signal amplitude is already down by 3dB at the cutoff frequency. This is not a fault. In fact, in electrical engineering, the position of this 3dB cut _defines_ the cutoff frequency. So, let's state this month's first Synth Secret:
 
 _[![](http://media.soundonsound.com/sos/sep99/images/synthfig3s.gif)][4]The cutoff frequency of a passive low-pass filter does not define the frequency at which the filter starts to work; it is itself defined as that frequency at which the signal is already attenuated by 3dB. And, since an attenuation of 3dB is easily perceived by the human ear, this means that you are already significantly affecting the signal at the cutoff frequency._
+// is it important ? ...
 
 Now, let's back-track a little and consider what a simple low-pass filter does to a common waveform. To simplify matters, we'll use the idealised low-pass filter response seen in Figure 2, because its sharp 'knee' makes it easier to recognise what's happening. Figure 4 shows the harmonic structure of the most common analogue synthesizer waveform of all: the sawtooth. All the harmonics are present in this signal, and their amplitudes relative to the fundamental are defined by the simple relationship 1/(harmonic number). Drawn on conventional graph axes, the amplitudes of the first 200 harmonics look like the graph shown in Figure 4 (see page 101). However, Figure 4 is far from the best way to represent these harmonics. Much better is the graph with logarithmic axes shown in figure 5\. This looks quite different, but it[![](http://media.soundonsound.com/sos/sep99/images/synthfig4s.gif)][5] represents exactly the same information, so don't worry if you don't know what a logarithmic scale is. Furthermore, it should be obvious why I have chosen to change the axes of the graph in this way, even if you _don't_ know what a logarithmic scale is: unlike in Figure 4, the amplitude relationship is now a straight line, and this makes it easy to see the filters' effects in the following graphs. Indeed, if you now look back at Figures 2 and 3 and study the axes, you will see that these graphs also have logarithmic axes.
+
+// I don't think I could explain anything from the last paragraph to someone
 
 **Applying The Filter**
 
@@ -70,6 +76,8 @@ _A 4-pole filter will always tend to a 24dB/octave rolloff at high frequencies, 
 If all this leads us to just one conclusion, it's this: filters are conspicuously more complex than we are often led to believe. Indeed, if you were to accept the common, simplistic definitions of 24dB/octave filters you might expect (say) the Minimoog's and the later ARPs' filters to sound the same. This is clearly not the case. Similarly, you might think that the MS20's and the Oberheim SEM's 12dB/octave filters would be similar, and this is equally false. So this month's final Synth Secret is something that you all knew anyway:
 
 _Whether the differences are subtle or glaringly obvious, every analogue filter design sounds different from every other. [![](http://media.soundonsound.com/images/regulars/sos_end.gif)][2]_
+
+// I gave up on this article. I think it doesn't match at all the previous articles in term of required knowledge. 
 
 [0]: http://www.soundonsound.com/sos/sep99/articles/synthsecrets.htm
 [1]: http://www.soundonsound.com/search?url=%2Fsearch&Keyword=%22synth+secrets%22&Words=All&Summary=Yes
